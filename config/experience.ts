@@ -2,7 +2,8 @@
 
 interface PagesInfoInterface {
     title: string;
-    imgArr: string[];
+    imgArr?: string[];
+    vid?: string[];
     description?: string;
 }
 
@@ -193,6 +194,57 @@ export const Experiences: ExperienceInterface[] = [
                 " Utilized Streamlit for intuitive user interaction, enabling personalized movie recommendations based on user input.",
             ],
         },
+    },
+
+
+    {
+        id: "Project-Generator", //no spaces
+        companyName: "CodeBundle AI",
+        type: "Personal Project",
+        category: ["Python", "Generative AI", "Automatic Code Generation"],
+        shortDescription:
+            "Give a description and build small projects in seconds",
+        githubLink: "https://github.com/irfan-iiitr/CodeBundle-AI",
+        websiteLink:"https://codebundle-ai.streamlit.app/",
+        techStack: [
+            "Streamlit",
+            "Gemini API",
+            "Generative AI",
+            "ZipFIle",
+            "Python",
+        ],
+        startDate: new Date("2024-05-15"),
+        endDate: new Date("2024-06-02"),
+        companyLogoImg: "/experience/codebundle/logo.png",
+        pagesInfoArr: [
+            {
+                title: "Generating a Project",
+                description: "test description",
+                vid: ["/experience/codebundle/1.mp4"],
+            },
+            {
+                title: "Testing The Project",
+                description: "test description",
+                vid: ["/experience/codebundle/2.mp4"],
+            },
+
+        ],
+      "descriptionDetails": {
+        "paragraphs": [
+            "This project aims to streamline the creation of structured Python projects for web applications by leveraging Generative AI and providing users with an intuitive interface for generating necessary files and directories.",
+            "The App File Generator is a Streamlit-based web application designed to simplify the initial setup process for developers by automatically generating the file structure and content required for a basic web app. Users input the desired name of their application, and the tool creates and packages the necessary files into a downloadable zip file.",
+            "The application uses the Google Generative AI API to generate a JSON structure that outlines the necessary files and their contents for a Python-based web app, creating directories and files based on this structure.",
+            "It utilizes Python's os, shutil, and zipfile libraries for file handling and compression, and manages environment variables securely using the dotenv library.",
+            "Streamlit is used for creating an intuitive user interface, enabling users to interact with the application easily and download the generated project."
+        ],
+        "bullets": [
+            "Developed a Python project generator app backend leveraging Google Generative AI API and Streamlit for user interaction.",
+            "Implemented automated file structure and content generation, enhancing developer experience.",
+            "Utilized Streamlit for an intuitive user interface, enabling easy project setup and download.",
+            "Incorporated Python's built-in libraries for file handling and compression, ensuring efficient project packaging.",
+            "Managed environment variables securely using the dotenv library for better security and configurability."
+        ]
+     }
     },
 ]; 
 

@@ -11,6 +11,7 @@ import irfanImg from "@/public/irfan-profile.jpg";
 import ChipContainer from "@/components/chip-container";
 import ExperienceDescription from "@/components/exp-desc";
 import CustomTooltip from "@/components/custom-tooltip";
+import Video from "@/components/ui/Video";
 
 interface ExperiencePageProps {
     params: {
@@ -125,8 +126,8 @@ export default function Experience({ params }: ExperiencePageProps) {
                             <Icons.star className="h-5 w-5 mr-2" /> {page.title}
                         </h3>
                         <div>
-                            <p>{page.description}</p>
-                            {page.imgArr.map((img, ind) => (
+                            {/* <p>{page.description}</p> */}
+                            {page.imgArr?.map((img, ind) => (
                                 <Image
                                     src={img}
                                     key={ind}
@@ -135,6 +136,14 @@ export default function Experience({ params }: ExperiencePageProps) {
                                     height={405}
                                     className="my-4 rounded-md border bg-muted transition-colors"
                                     priority
+                                />
+                            ))}
+                            {page.vid?.map((link, ind) => (
+                                <Video
+                                    src={link}
+                                    key={ind}
+                                     type="video/mp4"
+                                  
                                 />
                             ))}
                         </div>

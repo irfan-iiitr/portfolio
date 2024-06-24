@@ -13,7 +13,7 @@ export const pagesConfig: PagesConfig = {
         description: "Explore the key skills that define my professional identity.",
     },
     experience: {
-        title: "Experience",
+        title: "Projects",
         description: "Discover highlights from my career journey and impactful projects.",
     },
     contact: {
