@@ -2,7 +2,6 @@ export type ValidSkills =
     | "Next.js"
     | "React"
     | "GraphQL"
-    | "Nest.js"
     | "express.js"
     | "Node.js"
     | "MongoDB"

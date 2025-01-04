@@ -1,4 +1,4 @@
-  import { ValidCategory, ValidExpType, ValidSkills } from "./constants";
+  import { ValidExpType } from "./constants";
 
 interface PagesInfoInterface {
     title: string;
@@ -29,6 +29,58 @@ export interface ExperienceInterface {
 }
 
 export const Experiences: ExperienceInterface[] = [
+    {
+        id: "Socratic-Learning",
+        companyName: "Socratic Learning",
+        type: "Personal Project",
+        category: ["Web Dev", "Full Stack","API" , "Generative-AI","Agentic AI"],
+        shortDescription:
+            "Developed a web for Google AI Hackathon based on Socratic Learning helping user to learn Data Structures and Algorithms.",
+        githubLink: "https://github.com/irfan-iiitr/Socratic-Learning",
+        techStack: [
+            "React",
+            "Express",
+            "Node.js",
+            "Shadcn",
+            "Langchain",
+            "Python",
+            "FastAPI",
+            "MongoDB"
+
+        ],
+        startDate: new Date("2024-08-01"),
+        endDate: new Date("2024-09-01"),
+        companyLogoImg: "/experience/slearning/logo.jpg",
+        pagesInfoArr: [
+            {
+                title: "Pages",
+                description: "test description",
+                imgArr: [
+                    "/experience/slearning/1.png",
+                    "/experience/slearning/2.png",
+                    "/experience/slearning/3.png",
+                    "/experience/slearning/4.png",
+                    "/experience/slearning/5.png",
+                    "/experience/slearning/7.png",
+                    "/experience/slearning/8.png",
+
+                ],
+            },
+
+        ],
+        descriptionDetails: {
+            paragraphs: [
+                "Socratic Learning is an AI-powered educational platform that employs the Socratic method to enhance critical thinking and personalized learning, integrating advanced tools for an engaging and comprehensive learning experience."
+            ],
+            bullets: [
+                "Developed an AI-powered educational platform that uses the Socratic method to enhance critical thinking and personalized learning. ",
+                "Integrated multimodal learning features, including image-based queries, video summarization, and text-based doubt resolution.",
+                " Implemented interactive visualization tools for real-time understanding of data structures and algorithms.",
+                "Built an integrated code editor for seamless coding, testing, and debugging experiences.",
+                "Designed gamified learning elements with motivational badges and daily quotes to inspire student engagement."
+            ],
+        },
+    },
     {
         id: "News-Feed",
         companyName: "News Feed",
