@@ -82,6 +82,53 @@ export const Experiences: ExperienceInterface[] = [
         },
     },
     {
+        id: "Cover-Letter-generator",
+        companyName: "CoverCraft",
+        type: "Personal Project",
+        category: ["Automation", "Full Stack","API" , "Generative-AI"],
+        shortDescription:
+            "CoverCraft is an intelligent cover letter generation tool designed to help job seekers create personalized, professional cover letters tailored to their specific job applications.",
+        githubLink: "https://github.com/irfan-iiitr/Cover-Letter-Generator",
+        websiteLink:"https://cover-letter-generator-chi.vercel.app/",
+        techStack: [
+            "React",
+            "ExpressJS",
+            "Node.js",
+            "Shadcn",
+            "Gemini API",
+            "Python",
+        ],
+        startDate: new Date("2024-08-01"),
+        endDate: new Date("2024-09-01"),
+        companyLogoImg: "/experience/cv/logo.png",
+        pagesInfoArr: [
+            {
+                title: "Pages",
+                description: "test description",
+                imgArr: [
+                    "/experience/cv/1.png",
+                    "/experience/cv/2.png",
+                    "/experience/cv/3.png",
+                    "/experience/cv/4.png",
+                ],
+            },
+
+        ],
+        descriptionDetails: {
+            paragraphs: [
+                "A web-based tool to generate personalized cover letters by uploading or updating a CV and inputting job descriptions. Users can reference old cover letters and customize the generated content. The platform streamlines the process for quick and professional letter creation."
+            ],
+            bullets: [
+                "CV Upload: Users can upload their CV/resume in various formats. ",
+                "Previous Cover Letter Upload: Option to upload a previous cover letter for reference.",
+                "Job Description Input: Users can paste the job description they're applying for.",
+                "Additional Information: Space for users to add extra details like contact information.",
+                "AI-Powered Generation: Utilizes advanced AI to create a tailored cover letter based on the provided information",
+                "Instant Download: Generated cover letters can be immediately downloaded as a formatted Word document."
+            ],
+        },
+    },
+    {
         id: "News-Feed",
         companyName: "News Feed",
         type: "Personal Project",
