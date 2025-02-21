@@ -82,6 +82,54 @@ export const Experiences: ExperienceInterface[] = [
         },
     },
     {
+        id: "Form-Builder",
+        companyName: "Form Builder",
+        type: "Personal Project",
+        category: ["Web Dev", "Full Stack","API" , "PostgreSQL","Generative-AI","Drizzle ORM"],
+        shortDescription:
+            "Our platform offers intuitive design tools to help you craft forms that not only look great but also convert better.",
+        githubLink: "https://github.com/irfan-iiitr/Form-Wizard-AI",
+        techStack: [
+            "NextJS",
+            "Shadcn",
+            "PostgreSQL",
+            "TailwindCSS",
+            "Python",
+            "FastAPI",
+            "Generative AI",
+            "Drizzle ORM",
+        ],
+        startDate: new Date("2024-06-01"),
+        endDate: new Date("2024-07-01"),
+        companyLogoImg: "/experience/formbuilder/logo.png",
+        pagesInfoArr: [
+            {
+                title: "Pages",
+                description: "test description",
+                imgArr: [
+                    "/experience/formbuilder/1.png",
+                    "/experience/formbuilder/2.png",
+                    "/experience/formbuilder/3.png",
+                    "/experience/formbuilder/4.png",
+                    "/experience/formbuilder/5.png",
+                    "/experience/formbuilder/7.png",
+
+                ],
+            },
+
+        ],
+        descriptionDetails: {
+            paragraphs: [
+                "AI Form Builder, the ultimate platform that revolutionizes the way you create and share forms. With our cutting-edge artificial intelligence technology, we offer intuitive design tools that empower you to craft forms that are not only visually appealing but also optimized for better conversion rates. Say goodbye to mundane forms and welcome a new era of digital interaction."
+            ],
+            bullets: [
+                "Created an AI-powered form creation platform with customizable themes, secure user authentication, and integrated payment processing, allowing users to create 50 forms on free trial.",
+                "Enabled instant form sharing and data collection, enhancing user collaboration and submission management.",
+                "Integrated Jest for comprehensive testing, ensuring code quality and reliability across all features.",
+            ],
+        },
+    },
+    {
         id: "Cover-Letter-generator",
         companyName: "CoverCraft",
         type: "Personal Project",
